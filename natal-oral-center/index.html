@@ -956,7 +956,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
   document.documentElement.style.setProperty("--brand", c.cor);
   const art = c.artigo === "o" ? "o" : "a"; const paraA = "para " + art + " " + c.nome, daC = (art==="o"?"do ":"da ") + c.nome;
   if (d.galeria_titulo) { const g = document.querySelector("#galeria") && document.querySelector("#galeria").closest("section"); const h = g && g.querySelector(".cab h2"); if (h) h.textContent = d.galeria_titulo; }
-  document.title = "Prévia · " + c.nome;
+  document.title = (d.mostrar_site === false ? "Diagnóstico · " : "Prévia · ") + c.nome;
   document.querySelectorAll("[data-nome]").forEach(e => e.textContent = c.nome);
   document.querySelectorAll("[data-sigla]").forEach(e => e.textContent = c.sigla);
   const comSite = d.mostrar_site !== false;
