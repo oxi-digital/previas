@@ -125,45 +125,36 @@ const DADOS = {
  ],
  "anuncios": [
   {
-   "estilo": "dor",
-   "tag": "Dor",
-   "gancho": "Dentadura que _machuca_ e não firma na hora de comer?",
-   "apoio": "Existe uma alternativa fixa. Na avaliação particular você entende se ela é indicada para o seu caso.",
-   "legenda": "A prótese protocolo é uma opção fixa sobre implantes. Agende sua avaliação particular na Madalena e tire suas dúvidas com calma.",
-   "publico": "Frio: 45 a 65+ em Recife",
-   "cta_txt": "Avaliação particular"
+   "estilo": "reels",
+   "foto": "fotos/ad-dr.jpg",
+   "duracao": "0:42",
+   "gancho": "😣 Dentadura que _machuca_? Que escorrega? Que faz você esconder o sorriso?",
+   "apoio": "Existe uma alternativa **fixa sobre implantes**.",
+   "legenda": "😣 Dentadura que machuca? Que escorrega na hora de comer?\nExiste uma alternativa fixa sobre implantes, com planejamento individual para o seu caso.\n📍 Recife e região · atendimento particular\n👉 Fale com a nossa equipe e agende sua avaliação pelo WhatsApp.",
+   "publico": "Frio: 45 a 65+ em Recife, interesse em prótese e implante",
+   "cta_txt": "AGENDAR AVALIAÇÃO ➡️"
   },
   {
-   "estilo": "split",
-   "tag": "Hoje × com dentes fixos",
-   "gancho": "Do _medo de sorrir_ à liberdade de mastigar.",
-   "antes_t": "Hoje",
-   "antes": [
-    "Dentadura que solta",
-    "Medo de comer em público",
-    "Esconde o sorriso"
-   ],
-   "depois_t": "Com dentes fixos",
-   "depois": [
-    "Mastiga com firmeza",
-    "Sorri sem pensar",
-    "Mais segurança no dia a dia"
-   ],
-   "rodape": "Ilustração. A indicação depende da avaliação de cada caso.",
-   "legenda": "Planejamento individual, do primeiro implante à entrega. Atendimento particular há mais de 18 anos.",
+   "estilo": "reels",
+   "foto": "fotos/ad-dra.jpg",
+   "duracao": "1:05",
+   "gancho": "Já te disseram que você _não pode_ fazer implante?",
+   "apoio": "Na avaliação a gente explica **o que é possível no seu caso**.",
+   "prova": "⭐ 4,9 · 462 avaliações",
+   "legenda": "Já ouviu que não dá para fazer implante por causa do osso, da idade ou de outro problema? 🤔\nCada caso é um caso. Na avaliação particular da Exclusive você entende, com calma, as opções que existem para você.\n📍 Madalena, Recife · mais de 18 anos de clínica\n👉 Toque em \"Saiba mais\" e fale com a gente pelo WhatsApp.",
    "publico": "Remarketing: quem viu os vídeos ou chamou no WhatsApp",
-   "cta_txt": "Quero saber se posso"
+   "cta_txt": "QUERO SABER SE POSSO ➡️"
   },
   {
-   "estilo": "prova",
-   "tag": "Prova social",
-   "nota": "4,9",
-   "qtd": "462 avaliações no Google",
-   "gancho": "Mais de _18 anos_ cuidando de sorrisos em Recife.",
-   "selo": "Exclusive Odontologia · Madalena",
-   "legenda": "Implantes, protocolo e Invisalign com atendimento particular. Agende sua avaliação pelo WhatsApp.",
-   "publico": "Frio: 30 a 60 na Zona Oeste",
-   "cta_txt": "Agende sua avaliação"
+   "estilo": "reels",
+   "foto": "fotos/ad-invisalign.jpg",
+   "duracao": "0:38",
+   "gancho": "Alinhar os dentes _sem metal_ e sem parar a sua rotina ✨",
+   "apoio": "Invisalign com **planejamento digital** na Madalena.",
+   "prova": "⭐ 4,9 no Google",
+   "legenda": "Quer alinhar os dentes, mas não quer aparelho de metal? 😁\nCom o Invisalign você vê o planejamento do seu sorriso antes de começar.\n📍 Recife e região · atendimento particular\n➡️ Agende sua avaliação clicando em \"Saiba mais\".",
+   "publico": "Frio: 22 a 45 em Recife, interesse em estética do sorriso",
+   "cta_txt": "AGENDAR AVALIAÇÃO ➡️"
   }
  ],
  "projecao": {
@@ -581,6 +572,25 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .ad-cta span:last-child{background:#0F1E3A;color:#fff;padding:7px 12px;border-radius:8px;font-size:.8rem}
 .ad-nota-cfo{margin-top:16px;font-size:.88rem;color:var(--tx)}
 
+/* criativo estilo Reels (padrão dos anúncios que mais rodam na Dentalclass) */
+.ig.reels .ig-legenda.topo{margin:0;padding:4px 16px 12px;border:0;white-space:pre-line}
+.ad-reels{aspect-ratio:4/5;position:relative;overflow:hidden;background:#111 center/cover no-repeat}
+.ad-reels::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 55%,rgba(0,0,0,.78) 100%)}
+.ad-reels .stk{position:absolute;z-index:2;top:16px;left:14px;right:14px;text-align:center}
+.ad-reels .stk span{display:inline;background:#fff;color:#111;font-weight:800;font-size:1.08rem;line-height:1.55;padding:3px 8px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ad-reels .stk span em{font-style:normal;color:#9A7420}
+.ad-reels .play{position:absolute;z-index:2;top:auto;left:auto;right:12px;bottom:92px;width:40px;height:40px;margin:0;border-radius:50%;background:rgba(0,0,0,.45);display:grid;place-items:center;backdrop-filter:blur(3px)}
+.ad-reels .play::before{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.ad-reels .dur{position:absolute;z-index:2;left:12px;bottom:56px;font-size:.72rem;font-weight:700;color:#fff;background:rgba(0,0,0,.5);padding:3px 7px;border-radius:6px}
+.ad-reels .base{position:absolute;z-index:2;left:14px;right:14px;bottom:14px;color:#fff;font-weight:700;font-size:.92rem;line-height:1.35;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.ad-reels .base b{color:#E3C46F}
+.ad-reels .prova{position:absolute;z-index:2;right:12px;top:auto;bottom:56px;background:#111;color:#E3C46F;font-weight:800;font-size:.74rem;padding:5px 9px;border-radius:999px}
+.ad-link{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;background:#F2F4F7;border-bottom:1px solid #EAEAEA}
+.ad-link small{display:block;font-size:.66rem;letter-spacing:.04em;color:#6B7280;text-transform:uppercase}
+.ad-link b{display:block;font-size:.86rem;color:#111;letter-spacing:.02em}
+.ad-link i{font-style:normal;font-size:.72rem;letter-spacing:1px}
+.ad-link span.btn{background:#E4E6EB;color:#111;font-weight:700;font-size:.82rem;padding:8px 12px;border-radius:8px;white-space:nowrap}
+
 .aviso-exemplo{background:#FFF6D6;color:#5C4500;font-size:.9rem;padding:10px 0;text-align:center}
 
 [hidden]{display:none!important}
@@ -929,7 +939,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
       <ol class="passos3" id="fases"></ol>
       <div class="sub-bloco">
         <h3 class="sub-t" id="an-t">Como a clínica apareceria no Instagram</h3>
-        <p class="lead">Textos de exemplo, dentro das regras do CFO: sem preço, sem antes e depois, sem promessa de resultado. Na campanha real entram vídeos da equipe e dos pacientes que autorizarem.</p>
+        <p class="lead">Montados no formato que mais traz conversa hoje: vídeo vertical com o próprio dentista, a dor do paciente em destaque e o botão direto para o WhatsApp. Usei imagens dos vídeos que vocês já publicam. Tudo dentro das regras do CFO: sem preço, sem antes e depois, sem promessa de resultado.</p>
         <div class="anuncios" id="anuncios"></div>
       </div>
     </div>
@@ -1220,8 +1230,9 @@ details p{padding:0 24px 22px;color:var(--muted)}
     if (e === "prova") return '<div class="ad ad-prova"><span class="tag" style="background:rgba(15,30,58,.1);color:#0F1E3A">'+esc(x.tag||"Prova social")+'</span><div><div class="nt">'+esc(x.nota||"")+'</div><div class="est">★★★★★</div><div class="qtd">'+esc(x.qtd||"")+'</div></div><div class="g">'+rich(x.gancho)+'</div><div><span class="sel">'+esc(x.selo||c.nome)+'</span></div></div>';
     return null;
   };
-  $("anuncios").innerHTML = d.anuncios.map(x => { const a = arte(x); if (!a) return null; return '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+a+'<div class="ad-cta"><span>'+esc(x.cta_txt||"Agende sua avaliação")+'</span><span>Enviar mensagem</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+'</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>'; }).filter(Boolean).join("");
-  const _antigo = d.anuncios.filter(x => !arte(x));
+  const reels = x => '<article class="ig reels"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div><p class="ig-legenda topo">'+esc(x.legenda)+'</p><div class="ad-reels" style="background-image:url(\''+esc(x.foto)+'\')"><div class="stk"><span>'+rich(x.gancho)+'</span></div><div class="play" aria-hidden="true"></div>'+(x.duracao?'<span class="dur">0:00 / '+esc(x.duracao)+'</span>':'')+(x.prova?'<span class="prova">'+esc(x.prova)+'</span>':'')+'<div class="base">'+rich(x.apoio||"")+'</div></div><div class="ad-link"><div><small>api.whatsapp.com</small><b>'+esc(x.cta_txt||"AGENDAR AVALIAÇÃO ➡️")+'</b><i>⭐⭐⭐⭐⭐</i></div><span class="btn">Saiba mais</span></div><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>';
+  $("anuncios").innerHTML = d.anuncios.map(x => { if (x.estilo === "reels" && x.foto) return reels(x); const a = arte(x); if (!a) return null; return '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+a+'<div class="ad-cta"><span>'+esc(x.cta_txt||"Agende sua avaliação")+'</span><span>Enviar mensagem</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+'</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>'; }).filter(Boolean).join("");
+  const _antigo = d.anuncios.filter(x => !arte(x) && x.estilo !== "reels");
   if (_antigo.length) $("anuncios").innerHTML += _antigo.map(x => '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+(x.foto? '<div class="ig-arte foto" style="background-image:url(\''+esc(x.foto)+'\')">' : '<div class="ig-arte">')+'<strong>'+esc(x.gancho)+'</strong><span>📍 '+esc(c.regiao)+'</span></div><div class="ig-cta"><span>Enviar mensagem pelo WhatsApp</span><span aria-hidden="true">›</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+' Agende sua avaliação pelo WhatsApp.</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>').join("");
 
   const pj = d.projecao, r = $("verba");
