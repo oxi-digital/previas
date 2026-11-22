@@ -125,19 +125,36 @@ const DADOS = {
  ],
  "anuncios": [
   {
-   "gancho": "Usa dentadura e queria dentes fixos?",
-   "legenda": "Na avaliação a equipe explica se a prótese protocolo é indicada para você, com calma e sem compromisso de começar no dia.",
-   "publico": "Frio: 45 a 65+ no Guará e Águas Claras"
+   "estilo": "reels",
+   "foto": "fotos/ad-dra2.jpg",
+   "duracao": "0:51",
+   "gancho": "😣 Usa dentadura e _sonha_ com dentes fixos?",
+   "apoio": "Na avaliação você descobre **se pode fazer o protocolo**.",
+   "legenda": "😣 Dentadura que escorrega, que machuca, que tira a vontade de sorrir?\nA prótese protocolo é uma opção fixa sobre implantes. Na avaliação você entende, com calma, se ela é indicada para você.\n📍 Guará II, Brasília · 22 anos de clínica\n👉 Fale com a nossa equipe e agende sua avaliação pelo WhatsApp.",
+   "publico": "Frio: 45 a 65+ no Guará, Águas Claras e região",
+   "cta_txt": "AGENDAR AVALIAÇÃO ➡️"
   },
   {
-   "gancho": "4,8 no Google com mais de 1.700 avaliações.",
-   "legenda": "22 anos cuidando de sorrisos no Guará II. Fale com a equipe pelo WhatsApp e agende sua avaliação.",
-   "publico": "Frio: 30 a 60 em Brasília"
+   "estilo": "reels",
+   "foto": "fotos/ad-dra.jpg",
+   "duracao": "0:44",
+   "gancho": "Recebeu o orçamento e _ficou com dúvida_? A gente explica 📲",
+   "apoio": "Fale com a equipe **sem compromisso**.",
+   "prova": "⭐ 4,8 · 1.776 avaliações",
+   "legenda": "Já fez a avaliação na OdontoGuará e ficou alguma dúvida sobre o seu planejamento?\nChama a gente no WhatsApp: a equipe explica cada etapa, no seu tempo.\n📍 Guará II, Brasília\n👉 Toque em \"Saiba mais\" e fale com a gente.",
+   "publico": "Remarketing: quem já recebeu orçamento ou chamou no WhatsApp",
+   "cta_txt": "TIRAR MINHAS DÚVIDAS ➡️"
   },
   {
-   "gancho": "Ainda pensando na sua prótese?",
-   "legenda": "Se você já fez a avaliação, a equipe tira as dúvidas que ficaram sobre o seu planejamento.",
-   "publico": "Remarketing: quem já recebeu orçamento"
+   "estilo": "reels",
+   "foto": "fotos/ad-fachada.jpg",
+   "duracao": "0:30",
+   "gancho": "22 anos cuidando de sorrisos _no Guará_ 🦷",
+   "apoio": "Implantes, protocolo e Invisalign **no mesmo lugar**.",
+   "prova": "⭐ 4,8 no Google",
+   "legenda": "Mais de 40 mil pacientes já passaram pela OdontoGuará.\nImplantes, prótese protocolo, facetas e Invisalign, com responsável técnica Dra. Priscila de C. P. Oliveira (CRO/DF 6091).\n📍 QE 42, Guará II · Brasília\n➡️ Agende sua avaliação clicando em \"Saiba mais\".",
+   "publico": "Frio: 30 a 60 em Brasília",
+   "cta_txt": "AGENDAR AVALIAÇÃO ➡️"
   }
  ],
  "projecao": {
@@ -340,7 +357,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 }
 
 /* ================= PLANO · visual OXY ================= */
-.px{--t:#3E9396;--t2:#67A5AA;--t-soft:#E3F0F0;--n:#0F1E3A;--sl:#4F5B70;--g:#D9B865;--g-soft:#FBF4E2;--tx:#5B6472;--bd:#E3E7EB;--bg:#FAFAF8;--bg2:#F0F4F7;
+.px{--t:#B8902F;--t2:#D9BB6E;--t-soft:#F6EDD6;--td:#8A6A1F;--n:#0F1E3A;--sl:#4F5B70;--g:#D9B865;--g-soft:#FBF4E2;--tx:#5B6472;--bd:#E3E7EB;--bg:#FAFAF8;--bg2:#F0F4F7;
   font-family:"Plus Jakarta Sans",system-ui,sans-serif;background:var(--bg);color:var(--n)}
 .px h1,.px h2,.px h3{font-family:"Plus Jakarta Sans",system-ui,sans-serif;color:var(--n);letter-spacing:-.03em}
 .px h1{font-size:clamp(2.4rem,5.6vw,4.4rem);font-weight:800;line-height:1.04}
@@ -348,11 +365,15 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .px h3{font-size:1.05rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
 .px .sec{padding:96px 0}
 .px .sec.alt{background:var(--bg2)}
-.px .lbl{display:block;color:var(--t);font-weight:700;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.px .lbl{display:block;color:var(--td);font-weight:700;font-size:.9rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:18px}
+.px .sec .lbl.pilar{display:inline-flex;align-items:center;gap:12px;padding:10px 22px 10px 10px;border-radius:999px;background:#111111;color:#fff;font-size:1.05rem;font-weight:800;letter-spacing:.16em;box-shadow:0 12px 28px -14px rgba(0,0,0,.6);margin-bottom:26px;animation:salta 3.2s infinite}
+.px .lbl.pilar b{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#C9A24A;color:#111;font-size:.95rem;letter-spacing:0}
+.px .lbl.pilar.case{background:linear-gradient(135deg,#E9CC7C,#B8902F);color:#111;font-size:1.2rem;padding:12px 26px 12px 12px;animation:salta 2.4s infinite,pulsoOxy 2.2s infinite}
+.px .lbl.pilar.case b{background:#111;color:#E3C46F;width:44px;height:44px}
 .px .lead{font-size:1.25rem;color:var(--tx);max-width:40em;margin-top:22px;line-height:1.55}
 .px .card{background:#fff;border:1px solid var(--bd);border-radius:28px}
 .pill{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:0 28px;border-radius:999px;font-weight:700;font-size:1.05rem;text-decoration:none;cursor:pointer;border:0;font-family:inherit}
-.pill.t{background:var(--t);color:#fff}.pill.t:hover{background:#357F82}
+.pill.t{background:#111111;color:#E3C46F;border:1px solid #2A2A2A;box-shadow:0 10px 24px -12px rgba(0,0,0,.55)}.pill.t:hover{background:#000;color:#F0D488}
 .pill.o{background:transparent;color:var(--n);border:1.5px solid var(--bd)}.pill.o:hover{border-color:var(--t)}
 .pill svg{width:20px;height:20px}
 .px-hero{padding:110px 0 90px;border-bottom:1px solid var(--bd)}
@@ -366,9 +387,9 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .fluxo{text-align:center;margin-top:44px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sl);font-size:.95rem}
 .trilha{list-style:none;padding:0;margin:34px 0 0;display:flex;flex-wrap:wrap;gap:10px 12px;align-items:center}
 .trilha li{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--bd);border-radius:999px;padding:10px 18px 10px 10px;font-weight:700;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase;color:var(--n)}
-.trilha li b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--t);color:#fff;font-size:.8rem;letter-spacing:0}
-.trilha li + li::before{content:"→";color:var(--t2);margin:0 4px 0 -2px;font-weight:700}
-.px-hero h1 .cli{display:block;color:var(--t)}
+.trilha li b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#111;color:#E3C46F;font-size:.8rem;letter-spacing:0}
+
+.px-hero h1 .cli{display:block;color:var(--t);background:linear-gradient(135deg,#C9A24A,#8A6A1F);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 /* raio-x */
 .rx{list-style:none;margin:48px 0 0;padding:0;display:grid;gap:16px}
 .rx li{background:#fff;border:1px solid var(--bd);border-radius:22px;padding:26px 30px;display:grid;grid-template-columns:1fr auto;gap:8px 24px;position:relative;overflow:hidden}
@@ -377,8 +398,8 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .rx span.d{grid-column:1/-1;color:var(--tx);font-size:1.05rem}
 .badge{justify-self:end;align-self:start;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:7px 16px;border-radius:999px;background:var(--bgc);color:var(--fc)}
 .st-critico{--c:#C2453B;--bgc:#FBE6E3;--fc:#9E2B22}
-.st-atencao{--c:var(--g);--bgc:var(--g-soft);--fc:#7A5A10}
-.st-ok{--c:var(--t);--bgc:var(--t-soft);--fc:#2B6E70}
+.st-atencao{--c:#E07B24;--bgc:#FCE9D8;--fc:#9A4A0B}
+.st-ok{--c:var(--t);--bgc:var(--t-soft);--fc:#7A5A10}
 /* case */
 .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:52px}
 .kpis .card{padding:32px 30px}
@@ -413,7 +434,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .provas .tx2{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
 .provas q{font-weight:800;font-size:1.12rem;line-height:1.3;letter-spacing:-.01em;quotes:"“" "”"}
 .provas .who{color:var(--tx);font-size:.9rem}
-.provas .abrir{margin-top:auto;padding-top:10px;color:var(--t);font-weight:700;font-size:.92rem}
+.provas .abrir{margin-top:auto;padding-top:10px;color:var(--td);font-weight:700;font-size:.92rem}
 /* lightbox */
 .lb{position:fixed;inset:0;z-index:50;background:rgba(15,30,58,.82);display:grid;place-items:center;padding:24px}
 .lb[hidden]{display:none!important}
@@ -432,7 +453,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .px .aviso{color:var(--tx)}
 .passos3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;list-style:none;padding:0}
 .passos3 li{padding:34px 32px}
-.passos3 .num{font-size:.95rem;font-weight:800;letter-spacing:.14em;color:var(--t);text-transform:uppercase}
+.passos3 .num{font-size:.95rem;font-weight:800;letter-spacing:.14em;color:var(--td);text-transform:uppercase}
 .passos3 h3{margin:14px 0 10px;text-transform:none;letter-spacing:-.01em;font-size:1.35rem}
 .passos3 p{color:var(--tx)}
 .px-cta{background:var(--n);border-radius:32px;padding:64px;display:grid;grid-template-columns:1.4fr auto;gap:36px;align-items:center}
@@ -460,14 +481,17 @@ details p{padding:0 24px 22px;color:var(--muted)}
 }
 
 /* problemas → solução → plano → case → resultados */
-.roteiro{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
-.roteiro button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:999px;background:var(--bg2);font-weight:700;font-size:.9rem;color:var(--sl)}
-.roteiro button b{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#fff;color:var(--t);font-size:.74rem}
+.roteiro{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.roteiro button{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:10px;padding:10px 20px 10px 10px;border-radius:999px;background:#111111;font-weight:800;font-size:1rem;letter-spacing:.04em;color:#fff;box-shadow:0 10px 22px -12px rgba(0,0,0,.6);transition:transform .15s}
+.roteiro button:hover{transform:translateY(-2px)}
+.roteiro button.case{background:linear-gradient(135deg,#E9CC7C,#B8902F);color:#111;font-size:1.08rem;animation:salta 2.4s infinite,pulsoOxy 2.2s infinite}
+.roteiro button.case b{background:#111;color:#E3C46F}
+.roteiro button b{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#C9A24A;color:#111;font-size:.8rem}
 .roteiro button:hover{color:var(--n)}
 .roteiro button:focus-visible{outline:3px solid var(--g);outline-offset:2px}
 .px-marca{display:flex;align-items:center;gap:14px;margin-bottom:26px}
-.px-marca .fp{width:64px;height:64px;border-radius:50%;background:var(--n) center/cover no-repeat;color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.1rem;box-shadow:0 0 0 4px #fff,0 0 0 6px var(--t)}
-.px-marca b{display:block;font-size:1.05rem}
+.px-marca .fp{display:none!important;width:64px;height:64px;border-radius:50%;background:var(--n) center/cover no-repeat;color:#fff;display:grid;place-items:center;font-weight:800;font-size:1.1rem;box-shadow:0 0 0 4px #fff,0 0 0 6px var(--t)}
+.px-marca b{display:block;font-size:1.15rem}
 .px-marca small{display:block;color:var(--tx);font-size:.92rem}
 .rx-resumo{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
 .rx-resumo span{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;font-weight:700;font-size:.92rem;background:var(--bgc);color:var(--fc)}
@@ -479,9 +503,9 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .sol .pb i{flex:0 0 12px;height:12px;border-radius:50%;background:var(--c);margin-top:6px}
 .sol .pb b{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.95rem;line-height:1.4}
 .sol .pb small{display:block;font-weight:700;letter-spacing:.12em;font-size:.72rem;color:var(--fc);margin-top:4px}
-.sol .seta{width:40px;height:40px;border-radius:50%;background:var(--t-soft);color:var(--t);display:grid;place-items:center;font-weight:800}
+.sol .seta{width:40px;height:40px;border-radius:50%;background:#111;color:#E3C46F;display:grid;place-items:center;font-weight:800}
 .sol .rs p{color:var(--n);font-size:1.05rem;line-height:1.5}
-.sol .rs em{display:inline-block;margin-top:8px;font-style:normal;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--t);background:var(--t-soft);padding:5px 12px;border-radius:999px}
+.sol .rs em{display:inline-block;margin-top:8px;font-style:normal;font-weight:700;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#E3C46F;background:#111;padding:5px 12px;border-radius:999px}
 .frentes{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
 .frentes .card{padding:28px 28px 30px}
 .frentes .n{font-size:2.6rem;font-weight:800;color:var(--t);line-height:1;letter-spacing:-.04em}
@@ -511,6 +535,65 @@ details p{padding:0 24px 22px;color:var(--muted)}
   .sub-t{font-size:1.3rem!important}
 }
 
+/* criativos simulados do Meta */
+.px .ig{overflow:hidden}
+.ad{aspect-ratio:4/5;position:relative;overflow:hidden;color:#fff;display:flex;flex-direction:column;font-family:"Plus Jakarta Sans",sans-serif}
+.ad .tag{position:absolute;top:16px;left:16px;font-size:.7rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;background:rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;backdrop-filter:blur(4px)}
+.ad-dor{background:radial-gradient(120% 80% at 80% 0%,#2B3E66 0%,#0F1E3A 55%,#08111F 100%);padding:58px 24px 22px;justify-content:space-between}
+.ad-dor .q{font-size:1.75rem;font-weight:800;line-height:1.12;letter-spacing:-.02em}
+.ad-dor .q em{font-style:normal;color:#E3C46F}
+.ad-dor .ico{width:96px;height:96px;margin:6px auto 0;opacity:.95}
+.ad-dor .sub{font-size:.92rem;color:#C9D3E2;line-height:1.45}
+.ad-split{background:#0F1E3A;display:grid;grid-template-rows:auto 1fr auto}
+.ad-split .top{padding:18px 20px 10px;font-weight:800;font-size:1.15rem;line-height:1.2;text-align:center}
+.ad-split .top em{font-style:normal;color:#E3C46F}
+.ad-split .cols{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0 14px;border-radius:16px;overflow:hidden}
+.ad-split .col{padding:16px 12px;display:flex;flex-direction:column;gap:10px}
+.ad-split .col.a{background:#2A3448;color:#B9C2D3}
+.ad-split .col.b{background:linear-gradient(160deg,#F3E2B0,#D9B865);color:#0F1E3A}
+.ad-split .col h4{margin:0;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.ad-split .col svg{width:58px;height:58px;margin:2px auto}
+.ad-split .col li{list-style:none;font-size:.8rem;font-weight:700;line-height:1.3;display:flex;gap:6px}
+.ad-split .col ul{margin:0;padding:0;display:grid;gap:7px}
+.ad-split .col.a li::before{content:"✕";color:#E07B5B}
+.ad-split .col.b li::before{content:"✓";color:#0F1E3A}
+.ad-split .foot{padding:12px 18px 16px;font-size:.72rem;color:#93A3BB;text-align:center}
+.ad-prova{background:linear-gradient(160deg,#FBF4E2,#EBD49A);color:#0F1E3A;padding:56px 24px 22px;justify-content:space-between;text-align:center}
+.ad-prova .nt{font-size:4.6rem;font-weight:800;line-height:1;letter-spacing:-.04em}
+.ad-prova .est{color:#B8902F;font-size:1.5rem;letter-spacing:.12em}
+.ad-prova .qtd{font-weight:700;font-size:1rem}
+.ad-prova .g{font-weight:800;font-size:1.05rem;letter-spacing:.02em}
+.ad-prova .g em{font-style:normal;color:#8A6A1F}
+.ad-split .top{padding-top:22px}
+.px .ig-head .selo{background:#111;color:#E3C46F}
+.ad-split .cols{margin-bottom:4px}
+.ad-prova .sel{display:inline-block;background:#0F1E3A;color:#E3C46F;font-weight:800;font-size:.85rem;padding:8px 14px;border-radius:999px}
+.ad-cta{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#F2F4F7;font-weight:700;font-size:.9rem;color:#0F1E3A;border-bottom:1px solid #EFEFEF}
+.ad-cta span:last-child{background:#0F1E3A;color:#fff;padding:7px 12px;border-radius:8px;font-size:.8rem}
+.ad-nota-cfo{margin-top:16px;font-size:.88rem;color:var(--tx)}
+
+/* criativo estilo Reels (padrão dos anúncios que mais rodam na Dentalclass) */
+.ig.reels .ig-legenda.topo{margin:0;padding:4px 16px 12px;border:0;white-space:pre-line}
+.ad-reels{aspect-ratio:4/5;position:relative;overflow:hidden;background:#111 center/cover no-repeat}
+.ad-reels::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35) 0%,rgba(0,0,0,0) 32%,rgba(0,0,0,0) 55%,rgba(0,0,0,.78) 100%)}
+.ad-reels .stk{position:absolute;z-index:2;top:16px;left:14px;right:14px;text-align:center}
+.ad-reels .stk span{display:inline;background:#fff;color:#111;font-weight:800;font-size:1.08rem;line-height:1.55;padding:3px 8px;border-radius:6px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.ad-reels .stk span em{font-style:normal;color:#9A7420}
+.ad-reels .play{position:absolute;z-index:2;top:auto;left:auto;right:12px;bottom:92px;width:40px;height:40px;margin:0;border-radius:50%;background:rgba(0,0,0,.45);display:grid;place-items:center;backdrop-filter:blur(3px)}
+.ad-reels .play::before{content:"";border-left:13px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.ad-reels .dur{position:absolute;z-index:2;left:12px;bottom:56px;font-size:.72rem;font-weight:700;color:#fff;background:rgba(0,0,0,.5);padding:3px 7px;border-radius:6px}
+.ad-reels .base{position:absolute;z-index:2;left:14px;right:14px;bottom:14px;color:#fff;font-weight:700;font-size:.92rem;line-height:1.35;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.ad-reels .base b{color:#E3C46F}
+.ad-reels .prova{position:absolute;z-index:2;right:12px;top:auto;bottom:56px;background:#111;color:#E3C46F;font-weight:800;font-size:.74rem;padding:5px 9px;border-radius:999px}
+.ad-reels.sem-foto{background:radial-gradient(120% 90% at 50% 20%,#2A2A2A 0%,#111 60%,#000 100%)}
+.ad-reels .cena{position:absolute;z-index:2;left:22px;right:22px;top:42%;transform:translateY(-50%);text-align:center;color:#D8D8D8;font-size:.92rem;line-height:1.45;border:1px dashed rgba(227,196,111,.5);border-radius:14px;padding:14px}
+.ad-reels .cena small{display:block;color:#E3C46F;font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:.68rem;margin-bottom:6px}
+.ad-link{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;background:#F2F4F7;border-bottom:1px solid #EAEAEA}
+.ad-link small{display:block;font-size:.66rem;letter-spacing:.04em;color:#6B7280;text-transform:uppercase}
+.ad-link b{display:block;font-size:.86rem;color:#111;letter-spacing:.02em}
+.ad-link i{font-style:normal;font-size:.72rem;letter-spacing:1px}
+.ad-link span.btn{background:#E4E6EB;color:#111;font-weight:700;font-size:.82rem;padding:8px 12px;border-radius:8px;white-space:nowrap}
+
 .aviso-exemplo{background:#FFF6D6;color:#5C4500;font-size:.9rem;padding:10px 0;text-align:center}
 
 [hidden]{display:none!important}
@@ -532,19 +615,19 @@ details p{padding:0 24px 22px;color:var(--muted)}
   .hero .btn,.local .btn{width:100%;justify-content:center}
 }
 /* ===== Barra OXY da prévia ===== */
-.previa{position:sticky;top:0;z-index:40;background:#0F1E3A;color:#fff;font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:.86rem}
+.previa{position:sticky;top:0;z-index:40;background:#111111;color:#fff;font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:.86rem}
 .previa .wrap{max-width:1240px;display:flex;align-items:center;gap:14px;min-height:58px;flex-wrap:wrap;padding-top:7px;padding-bottom:7px}
 .previa p{flex:1;min-width:200px;opacity:.82}
 .tabs{display:flex;gap:4px;background:rgba(255,255,255,.1);padding:4px;border-radius:999px}
 .tabs button{all:unset;cursor:pointer;padding:8px 16px;border-radius:999px;font-weight:700;font-size:.86rem;color:#fff}
 .tabs button[aria-selected="true"]{background:#fff;color:#0F1E3A}
-.tabs button#tab-plano{background:linear-gradient(135deg,#3E9396,#2A6FB0);color:#fff;animation:pulsoOxy 2.2s infinite}
-.tabs button#tab-plano[aria-selected="true"]{background:#fff;color:#0F1E3A;animation:none}
+.tabs button#tab-plano{background:#111;color:#E3C46F;box-shadow:inset 0 0 0 1.5px #C9A24A;animation:pulsoOxy 2.2s infinite}
+.tabs button#tab-plano[aria-selected="true"]{background:linear-gradient(135deg,#E9CC7C,#B8902F);color:#111;animation:none}
 .tabs button:focus-visible{outline:3px solid #F2B705}
-@keyframes pulsoOxy{0%{box-shadow:0 0 0 0 rgba(62,147,150,.75)}70%{box-shadow:0 0 0 12px rgba(62,147,150,0)}100%{box-shadow:0 0 0 0 rgba(62,147,150,0)}}
+@keyframes pulsoOxy{0%{box-shadow:0 0 0 0 rgba(217,184,101,.8)}70%{box-shadow:0 0 0 12px rgba(217,184,101,0)}100%{box-shadow:0 0 0 0 rgba(217,184,101,0)}}
 @keyframes pulsoAc{0%{box-shadow:0 0 0 0 var(--acp)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
 @keyframes salta{0%,100%{transform:translateY(0)}8%{transform:translateY(-6px)}16%{transform:translateY(0)}22%{transform:translateY(-3px)}28%{transform:translateY(0)}}
-.ir-plano{position:fixed;left:22px;bottom:22px;z-index:45;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:18px;background:linear-gradient(135deg,#3E9396,#2A6FB0);color:#fff;font-family:"Plus Jakarta Sans",system-ui,sans-serif;box-shadow:0 18px 40px -12px rgba(15,30,58,.65);border:0;cursor:pointer;text-align:left;opacity:0;pointer-events:none;translate:0 20px;transition:opacity .35s,translate .35s}
+.ir-plano{position:fixed;left:22px;bottom:22px;z-index:45;display:flex;align-items:center;gap:12px;padding:12px 18px 12px 12px;border-radius:18px;background:#111111;color:#fff;font-family:"Plus Jakarta Sans",system-ui,sans-serif;box-shadow:0 18px 40px -12px rgba(15,30,58,.65);border:0;cursor:pointer;text-align:left;opacity:0;pointer-events:none;translate:0 20px;transition:opacity .35s,translate .35s}
 .ir-plano.on{opacity:1;pointer-events:auto;translate:0 0;animation:pulsoOxy 2.2s infinite}
 .ir-plano i{width:40px;height:40px;border-radius:12px;background:rgba(255,255,255,.18);display:grid;place-items:center;font-style:normal;font-size:1.25rem}
 .ir-plano b{display:block;font-size:.95rem;line-height:1.2}
@@ -693,8 +776,8 @@ details p{padding:0 24px 22px;color:var(--muted)}
 .ds-oxy .b{display:flex;align-items:center;gap:24px;flex-wrap:wrap;justify-content:space-between;background:linear-gradient(135deg,#0F1E3A,#17345E);border:1px solid rgba(103,165,170,.35);border-radius:22px;padding:28px 32px;font-family:"Plus Jakarta Sans",sans-serif}
 .ds-oxy .b p{color:#C9D6E6;max-width:40em}
 .ds-oxy .b p b{color:#fff}
-.ds-oxy .bto{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;background:linear-gradient(135deg,#3E9396,#2A6FB0);color:#fff;border:0;cursor:pointer;font:700 .98rem "Plus Jakarta Sans",sans-serif;animation:pulsoOxy 2.2s infinite}
-@media (prefers-reduced-motion:reduce){.ds .bt.wa,.ds-flut,.ir-plano.on,.tabs button#tab-plano,.ds-oxy .bto{animation:none}}
+.ds-oxy .bto{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:12px;background:#111111;color:#fff;border:0;cursor:pointer;font:700 .98rem "Plus Jakarta Sans",sans-serif;animation:pulsoOxy 2.2s infinite}
+@media (prefers-reduced-motion:reduce){.roteiro button.case,.px .lbl.pilar,.ad-cta,.ds .bt.wa,.ds-flut,.ir-plano.on,.tabs button#tab-plano,.ds-oxy .bto{animation:none}}
 @media (max-width:900px){
   .ds section{padding:66px 0}
   .ds-nav{top:0;position:relative}
@@ -825,7 +908,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
         <button type="button" data-ir="s-prob"><b>01</b>Problemas</button>
         <button type="button" data-ir="s-sol"><b>02</b>Solução</button>
         <button type="button" data-ir="s-plano"><b>03</b>Plano</button>
-        <button type="button" data-ir="s-case"><b>04</b>Case</button>
+        <button type="button" class="case" data-ir="s-case"><b>04</b>Nosso case</button>
         <button type="button" data-ir="s-res"><b>05</b>Resultados</button>
       </nav>
     </div>
@@ -833,7 +916,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 
   <section class="sec alt" id="s-prob">
     <div class="wrap">
-      <span class="lbl" id="rx-lbl">01 • Problemas</span>
+      <span class="lbl pilar" id="rx-lbl"><b>01</b>Problemas</span>
       <h2 id="rx-t">Onde a clínica perde paciente hoje</h2>
       <p class="lead">O que eu vi no caminho que o paciente faz do Instagram ou do Google até a primeira mensagem.</p>
       <div class="rx-resumo" id="rx-resumo"></div>
@@ -843,7 +926,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 
   <section class="sec" id="s-sol">
     <div class="wrap">
-      <span class="lbl">02 • Solução</span>
+      <span class="lbl pilar"><b>02</b>Solução</span>
       <h2>O que fazemos em cada ponto</h2>
       <p class="lead">Cada problema tem um responsável numa das três frentes da OXY Digital. Nada fica solto.</p>
       <ol class="sol" id="solucoes"></ol>
@@ -853,13 +936,13 @@ details p{padding:0 24px 22px;color:var(--muted)}
 
   <section class="sec alt" id="s-plano">
     <div class="wrap">
-      <span class="lbl">03 • Plano</span>
+      <span class="lbl pilar"><b>03</b>Plano</span>
       <h2>O plano dos primeiros 90 dias</h2>
       <p class="lead" id="pl-sub"></p>
       <ol class="passos3" id="fases"></ol>
       <div class="sub-bloco">
         <h3 class="sub-t" id="an-t">Como a clínica apareceria no Instagram</h3>
-        <p class="lead">Textos de exemplo, dentro das regras do CFO: sem preço, sem antes e depois, sem promessa de resultado. Na campanha real entram vídeos da equipe e dos pacientes que autorizarem.</p>
+        <p class="lead" id="an-lead">Montados no formato que mais traz conversa hoje: vídeo vertical com o próprio dentista, a dor do paciente em destaque e o botão direto para o WhatsApp. Usei imagens dos vídeos que vocês já publicam. Tudo dentro das regras do CFO: sem preço, sem antes e depois, sem promessa de resultado.</p>
         <div class="anuncios" id="anuncios"></div>
       </div>
     </div>
@@ -867,7 +950,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 
   <section class="sec" id="s-case">
     <div class="wrap">
-      <span class="lbl">04 • Case</span>
+      <span class="lbl pilar case"><b>04</b>Nosso case</span>
       <h2>Dentalclass: o mesmo caminho, numa clínica de reabilitação oral</h2>
       <p class="lead">Clínica de implantes e reabilitação oral em Brusque/SC, parceira desde 2022. Anúncios levando para a conversa no WhatsApp, atendimento organizado no CRM e leitura do que vira venda, conversa por conversa.</p>
       <div class="case-wrap">
@@ -890,7 +973,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
 
   <section class="sec alt" id="s-res">
     <div class="wrap">
-      <span class="lbl">05 • Resultados</span>
+      <span class="lbl pilar"><b>05</b>Resultados</span>
       <h2>R$ 436 mil em vendas vindas dos anúncios em quatro meses</h2>
       <p class="lead">Julho a outubro de 2026 na Dentalclass, só contando venda em que a conversa do paciente começou por um anúncio.</p>
       <div class="kpis">
@@ -1067,11 +1150,11 @@ details p{padding:0 24px 22px;color:var(--muted)}
   $("p-titulo").innerHTML = '<span class="cli">' + esc(c.nome) + '</span>da aquisição à gestão do funil comercial';
   $("p-sub").textContent = (quem ? quem + ", sou " : "Sou ") + a.responsavel + ", da " + a.nome + ". Olhei " + (art==="o" ? "o seu trabalho" : art + " " + c.nome) + " de perto. Abaixo estão os pontos em que " + (art==="o" ? "o consultório" : "a clínica") + " perde paciente hoje, o que faríamos em cada um, o plano e o resultado de uma clínica que já fez esse caminho.";
   const fp = (d.fotos||{}).perfil;
-  $("p-marca").innerHTML = '<span class="fp"'+(fp?' style="background-image:url(\''+esc(fp)+'\')" aria-hidden="true">':'>'+esc(c.sigla||""))+'</span><div><b>'+esc(c.nome)+'</b><small>'+esc([c.instagram, c.cidade].filter(Boolean).join(" · "))+'</small></div>';
+  $("p-marca").innerHTML = '<span class="fp"'+(fp?' style="background-image:url(\''+esc(fp)+'\')" aria-hidden="true">':'>'+esc(c.sigla||""))+'</span><div><b>'+esc(c.nome)+'</b><small>'+esc([c.instagram, c.cidade].filter(Boolean).join(" / "))+'</small></div>';
   $("p-marca").hidden = false;
   $("p-falar").textContent = "Falar com " + a.responsavel.split(" ")[0];
   $("p-falar").href = wa(a.whatsapp, "Olá, " + a.responsavel.split(" ")[0] + "! Vi a página que vocês fizeram " + paraA + " e quero conversar.");
-  $("rx-lbl").textContent = "01 • Problemas";
+  
   $("rx-t").textContent = "Onde " + (art==="o" ? "o " : "a ") + c.nome + " perde paciente hoje";
   const ST = {ok:["st-ok","Bom"],atencao:["st-atencao","Atenção"],critico:["st-critico","Urgente"]};
   const RX = d.raiox || [];
@@ -1105,6 +1188,7 @@ details p{padding:0 24px 22px;color:var(--muted)}
   $("solucoes").innerHTML = SOL.map(x => { const t = ST[x.r.status] || ST.atencao; return '<li class="'+t[0]+'"><div class="pb"><i aria-hidden="true"></i><div><b>'+esc(x.r.item)+'</b><small>'+(x.r.status==="ok"?"A FAVOR":t[1].toUpperCase())+'</small></div></div><span class="seta" aria-hidden="true">→</span><div class="rs"><p>'+esc(x.texto)+'</p><em>'+esc(FRENTES[x.frente][0])+'</em></div></li>'; }).join("");
   $("frentes").innerHTML = Object.keys(FRENTES).map((k,n) => { const q = SOL.filter(x=>x.frente===k).length; return '<div class="card"><div class="n">0'+(n+1)+'</div><h3>'+esc(FRENTES[k][0])+'</h3><p>'+esc(FRENTES[k][1])+'</p>'+(q?'<span class="q">'+q+(q===1?' ponto':' pontos')+' deste diagnóstico</span>':'')+'</div>'; }).join("");
   $("pl-sub").textContent = "Em ordem: primeiro arrumar o caminho até a conversa, depois ligar os anúncios e, a partir do segundo mês, cuidar do funil até o faturamento.";
+  if ((d.anuncios||[]).some(x => x.estilo === "reels" && !x.foto)) $("an-lead").textContent = "Montados no formato que mais traz conversa hoje: vídeo vertical com o próprio dentista, a dor do paciente em destaque e o botão direto para o WhatsApp. Onde ainda não há vídeo, deixei a cena que gravaríamos. Tudo dentro das regras do CFO: sem preço, sem antes e depois, sem promessa de resultado.";
   $("an-t").textContent = "Como " + (art==="o" ? "o " : "a ") + c.nome + " apareceria no Instagram";
   $("pj-t").textContent = "E " + (art==="o" ? "no " : "na ") + c.nome + "?";
 
@@ -1141,7 +1225,19 @@ details p{padding:0 24px 22px;color:var(--muted)}
   document.querySelectorAll("[data-ir]").forEach(b => b.addEventListener("click", () => document.getElementById(b.dataset.ir).scrollIntoView({behavior:"smooth"})));
 
   const seloAd = (d.fotos||{}).perfil ? '<span class="selo img" style="background-image:url(\''+esc(d.fotos.perfil)+'\')" aria-hidden="true"></span>' : '<span class="selo">'+esc(c.sigla)+'</span>';
-  $("anuncios").innerHTML = d.anuncios.map(x => '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+(x.foto? '<div class="ig-arte foto" style="background-image:url(\''+esc(x.foto)+'\')">' : '<div class="ig-arte">')+'<strong>'+esc(x.gancho)+'</strong><span>📍 '+esc(c.regiao)+'</span></div><div class="ig-cta"><span>Enviar mensagem pelo WhatsApp</span><span aria-hidden="true">›</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+' Agende sua avaliação pelo WhatsApp.</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>').join("");
+  const SVG_DENTADURA = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 26c0-8 10-12 24-12s24 4 24 12c0 5-4 8-9 8H17c-5 0-9-3-9-8Z"/><path d="M16 34v6M24 34v8M32 34v8M40 34v8M48 34v6"/><path d="M22 50l4-4M38 50l4-4" opacity=".6"/></svg>';
+  const SVG_DENTE = '<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c-7 0-11 6-10 14 1 7 4 10 5 17 1 8 3 15 7 15 4 0 4-12 10-12s6 12 10 12c4 0 6-7 7-15 1-7 4-10 5-17 1-8-3-14-10-14-5 0-7 3-12 3s-7-3-12-3Z"/><path d="M26 22c3 1 9 1 12 0" opacity=".6"/></svg>';
+  const arte = x => {
+    const e = x.estilo;
+    if (e === "dor") return '<div class="ad ad-dor"><span class="tag">'+esc(x.tag||"Dor")+'</span><div class="q">'+rich(x.gancho)+'</div><div class="ico" style="color:#E3C46F">'+SVG_DENTADURA+'</div><div class="sub">'+esc(x.apoio||"")+'</div></div>';
+    if (e === "split") return '<div class="ad ad-split"><div class="top">'+rich(x.gancho)+'</div><div class="cols"><div class="col a"><h4>'+esc(x.antes_t||"Hoje")+'</h4>'+SVG_DENTADURA+'<ul>'+(x.antes||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div><div class="col b"><h4>'+esc(x.depois_t||"Com dentes fixos")+'</h4>'+SVG_DENTE+'<ul>'+(x.depois||[]).map(t=>'<li>'+esc(t)+'</li>').join("")+'</ul></div></div><div class="foot">'+esc(x.rodape||"Ilustração. Cada caso é avaliado individualmente.")+'</div></div>';
+    if (e === "prova") return '<div class="ad ad-prova"><span class="tag" style="background:rgba(15,30,58,.1);color:#0F1E3A">'+esc(x.tag||"Prova social")+'</span><div><div class="nt">'+esc(x.nota||"")+'</div><div class="est">★★★★★</div><div class="qtd">'+esc(x.qtd||"")+'</div></div><div class="g">'+rich(x.gancho)+'</div><div><span class="sel">'+esc(x.selo||c.nome)+'</span></div></div>';
+    return null;
+  };
+  const reels = x => '<article class="ig reels"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div><p class="ig-legenda topo">'+esc(x.legenda)+'</p><div class="ad-reels'+(x.foto?'':' sem-foto')+'"'+(x.foto?' style="background-image:url(\''+esc(x.foto)+'\')"':'')+'>'+(x.foto?'':'<div class="cena"><small>🎬 Cena do vídeo</small>'+esc(x.cena||"")+'</div>')+'<div class="stk"><span>'+rich(x.gancho)+'</span></div><div class="play" aria-hidden="true"></div>'+(x.duracao?'<span class="dur">0:00 / '+esc(x.duracao)+'</span>':'')+(x.prova?'<span class="prova">'+esc(x.prova)+'</span>':'')+'<div class="base">'+rich(x.apoio||"")+'</div></div><div class="ad-link"><div><small>api.whatsapp.com</small><b>'+esc(x.cta_txt||"AGENDAR AVALIAÇÃO ➡️")+'</b><i>⭐⭐⭐⭐⭐</i></div><span class="btn">Saiba mais</span></div><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>';
+  $("anuncios").innerHTML = d.anuncios.map(x => { if (x.estilo === "reels") return reels(x); const a = arte(x); if (!a) return null; return '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+a+'<div class="ad-cta"><span>'+esc(x.cta_txt||"Agende sua avaliação")+'</span><span>Enviar mensagem</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+'</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>'; }).filter(Boolean).join("");
+  const _antigo = d.anuncios.filter(x => !arte(x) && x.estilo !== "reels");
+  if (_antigo.length) $("anuncios").innerHTML += _antigo.map(x => '<article class="ig"><div class="ig-head">'+seloAd+'<div><b>'+esc(c.nome)+'</b><small>Patrocinado</small></div></div>'+(x.foto? '<div class="ig-arte foto" style="background-image:url(\''+esc(x.foto)+'\')">' : '<div class="ig-arte">')+'<strong>'+esc(x.gancho)+'</strong><span>📍 '+esc(c.regiao)+'</span></div><div class="ig-cta"><span>Enviar mensagem pelo WhatsApp</span><span aria-hidden="true">›</span></div><p class="ig-legenda"><b>'+esc(c.instagram || c.nome)+'</b> '+esc(x.legenda)+' Agende sua avaliação pelo WhatsApp.</p><span class="ig-publico">Para quem: '+esc(x.publico)+'</span></article>').join("");
 
   const pj = d.projecao, r = $("verba");
   r.min = pj.diario_min; r.max = pj.diario_max; r.step = 5; r.value = pj.diario_padrao;
